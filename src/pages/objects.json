@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "apple",
+        "img": "https://www.freepngimg.com/thumb/apple/2-red-apple-png-image-thumb.png",
+        "selected": false
+    },
+    {
+        "id": 2,
+        "name": "banana",
+        "img": "https://www.freepngimg.com/thumb/banana/1-banana-png-image-thumb.png",
+        "selected": false
+    },
+    {
+        "id": 3,
+        "name": "cherry",
+        "img": "https://www.freepngimg.com/thumb/cherry/1-red-cherry-png-image-download-thumb.png",
+        "selected": false
+    },
+    {
+        "id": 4,
+        "name": "grape",
+        "img": "https://www.freepngimg.com/thumb/grape/4-grape-png-image-download-picture-thumb.png",
+        "selected": false
+    },
+    {
+        "id": 5,
+        "name": "lemon",
+        "img": "https://www.freepngimg.com/thumb/lemon/1-lemon-png-image-thumb.png",
+        "selected": false
+    },
+    {
+        "id": 6,
+        "name": "mango",
+        "img": "https://www.freepngimg.com/thumb/mango/7-2-mango-free-png-image-thumb.png",
+        "selected": false
+    },
+    {
+        "id": 7,
+        "name": "orange",
+        "img": "https://www.freepngimg.com/thumb/orange/19-orange-png-image-download-thumb.png",
+        "selected": false
+    },
+    {
+        "id": 8,
+        "name": "pineapple",
+        "img": "https://www.freepngimg.com/thumb/pineapple/2-pineapple-png-image-download-thumb.png",
+        "selected": false
+    },
+    {
+        "id": 9,
+        "name": "raspberry",
+        "img": "https://www.freepngimg.com/thumb/raspberry/5-2-raspberry-png-thumb.png",
+        "selected": false
+    },
+    {
+        "id": 10,
+        "name": "avocado",
+        "img": "https://www.freepngimg.com/thumb/avocado/1-2-avocado-png-clipart-thumb.png",
+        "selected": false
+    },
+    {
+        "id": 11,
+        "name": "watermelon",
+        "img": "https://www.freepngimg.com/thumb/watermelon/1-watermelon-png-image-thumb.png",
+        "selected": false
+    },
+    {
+        "id": 12,
+        "name": "blackberry",
+        "img": "https://www.freepngimg.com/thumb/blackberry/4-2-blackberry-fruit-png-image-thumb.png",
+        "selected": false
+    }
+]
