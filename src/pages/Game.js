@@ -5,6 +5,8 @@ import Image from "../components/Image";
 import Scoreboard from"../components/Scoreboard";
 import "./style.css"
 
+var message = "";
+
 class Game extends Component {
     state = {
         userScore: 0,
@@ -12,17 +14,23 @@ class Game extends Component {
         objects
     };
 
+
     checkGame = id => {
+        
+        if( this.state.userScore === 0){
+            message = "Start Game!";
+        }
         this.state.objects.forEach(element => {
             //function to shuffle array
 
             if(element.id===id){
                 if(!element.selected){
-                    console.log("correct!");
+                    message = "Correct!";
                     element.selected=true;
                     this.setState({userScore: this.state.userScore+1});
+                    
                 }else{
-                    console.log("gameover");
+                    message = "Game over.  Try Again!";
                     console.log(this.state.highScore);
                     if(this.state.userScore > this.state.highScore){
                         this.state.highScore = this.state.userScore;
@@ -33,6 +41,7 @@ class Game extends Component {
             }
   
         });
+    
         const shuffle = array => {
             var currentIndex = array.length, temporaryValue, randomIndex;
             while (0 !== currentIndex) {
@@ -55,6 +64,7 @@ class Game extends Component {
         <Wrapper>
             <Scoreboard userScore={this.state.userScore}
                         highScore={this.state.highScore}
+                        message={message}
             />
             <div className="row">
                 {this.state.objects.map(object => (

@@ -10,7 +10,7 @@ return (
           <span>Score: {props.userScore}</span>
         </div>
         <div className="col-lg-4">
-          <span>Start Game!</span>
+          <span>{props.message}</span>
         </div>
         <div className="col-lg-4">
           <span>High Score: {props.highScore}</span>
