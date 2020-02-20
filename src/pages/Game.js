@@ -3,6 +3,7 @@ import objects from "./objects.json";
 import Wrapper from "../components/Wrapper";
 import Image from "../components/Image";
 import Scoreboard from"../components/Scoreboard";
+import "./style.css"
 
 class Game extends Component {
     state = {
@@ -55,15 +56,19 @@ class Game extends Component {
             <Scoreboard userScore={this.state.userScore}
                         highScore={this.state.highScore}
             />
-            {this.state.objects.map(object => (
-                <Image 
-                    id={object.id}
-                    img={object.img}
-                    checkGame={this.checkGame}
-                    selected={object.selected}
+            <div className="row">
+                {this.state.objects.map(object => (
+                    <div className="col-lg-4 d-flex justify-content-center">
+                    <Image 
+                        id={object.id}
+                        img={object.img}
+                        checkGame={this.checkGame}
+                        selected={object.selected}
 
-                />
-            ))}
+                    />
+                    </div>
+                ))}
+            </div>
         </Wrapper>
         );
     }
